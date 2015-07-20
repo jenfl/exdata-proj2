@@ -38,5 +38,4 @@ bp <- qplot(yearcol, emissioncol, data=baltsources,
 bp <- bp+theme(legend.title=element_blank())+
     ggtitle("Baltimore City PM2.5 Levels Across Sources")
 bp
-ggsave(filename="plot3.png")
-dev.off()
+ggsave(filename="plot3.png", width=3, height=2, units="in", dpi=100, scale=2)
